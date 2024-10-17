@@ -2,5 +2,6 @@ numpy
 pandas
 matplotlib
 yfinance
-tensorflow  # Includes Keras as well
+keras
 streamlit
+scikit-learn
