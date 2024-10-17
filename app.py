@@ -28,3 +28,18 @@ st.subheader('Closing Price Vs Time Chart')
 fig = plt.figure(figsize=(12,6))
 plt.plot(df.Close)
 st.pyplot(fig)
+
+
+st.subheader('Closing Price Vs Time Chart')
+ma100 = df.Close.rolling(100).mean()
+fig = plt.figure(figsize=(12,6))
+plt.plot(df.Close)
+st.pyplot(fig)
+
+
+st.subheader('Closing Price Vs Time Chart')
+ma100 = df.Close.rolling(100).mean()
+ma200 = df.Close.rolling(200).mean()
+fig = plt.figure(figsize=(12,6))
+plt.plot(df.Close)
+st.pyplot(fig)
