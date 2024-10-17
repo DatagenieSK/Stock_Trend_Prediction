@@ -22,3 +22,9 @@ df = yf.download(user_input, start=start, end=end)
 # Displaying the stock data summary
 st.subheader('Data From 2010 to 18/10/2024')
 st.write(df.describe())
+
+#Visulizations
+st.subheader('Closing Price Vs Time Chart')
+fig = plt.figure(figsize=(12,6))
+plt.plot(df.Close)
+st.pyplot(fig)
